@@ -42,7 +42,7 @@ export default function NoteDetail({ note }: NoteDetailProps) {
                     {note.content} | por: <span className="font-bold">{note.createdBy.name}</span>
                 </p>
                 <p className="text-xs text-slate-500">
-                    {formatDate(note.createAt)}
+                    {formatDate(note.createdAt)}
                 </p>
                 {canDelete && (
                     <button
